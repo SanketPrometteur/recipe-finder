@@ -3,9 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Finder</title>
+    <title>Food Landing Page</title>
+    <style>
+        /* Reset some basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header section */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .search-container {
+            margin-top: 10px;
+        }
+
+        .search-container input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .search-container button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-container button:hover {
+            background-color: #45a049;
+        }
+
+        /* Main Content */
+        .food-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .food-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 15px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .food-card h3 {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .food-card p {
+            font-size: 16px;
+            color: #555;
+            padding: 0 10px;
+            margin-bottom: 20px;
+        }
+
+        .food-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .food-card a:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>Recipe Finder</h1>
+
+<!-- Header Section -->
+<header>
+    <h1>Foodie's Paradise</h1>
+    <div class="search-container">
+        <input type="text" placeholder="Search for your favorite food...">
+        <button type="button">Search</button>
+    </div>
+</header>
+
+<!-- Main Content Section: Food Items -->
+<div class="food-items">
+    <!-- Food Card 1 -->
+    <div class="food-card">
+        <img src="https://cdn.dummyjson.com/recipe-images/1.webp" alt="Classic Margherita Pizza">
+        <h3>Classic Margherita Pizza</h3>
+        <p>A simple yet delicious pizza with fresh mozzarella and basil.</p>
+        <a href="./product.html">See Details</a>
+    </div>
+
+    <!-- Food Card 2 -->
+    <div class="food-card">
+        <img src="https://cdn.dummyjson.com/recipe-images/2.webp" alt="Spaghetti Bolognese">
+        <h3>Spaghetti Bolognese</h3>
+        <p>Traditional Italian pasta with a rich, meaty sauce.</p>
+        <a href="./product.html">See Details</a>
+    </div>
+
+    <!-- Food Card 3 -->
+    <div class="food-card">
+        <img src="https://cdn.dummyjson.com/recipe-images/3.webp" alt="Caesar Salad">
+        <h3>Caesar Salad</h3>
+        <p>Fresh greens topped with crispy croutons and creamy dressing.</p>
+        <a href="./product.html">See Details</a>
+    </div>
+
+    <!-- Food Card 4 -->
+    <div class="food-card">
+        <img src="https://cdn.dummyjson.com/recipe-images/4.webp" alt="Chicken Alfredo">
+        <h3>Chicken Alfredo</h3>
+        <p>A creamy pasta dish with tender chicken and parmesan.</p>
+        <a href="./product.html">See Details</a>
+    </div>
+</div>
+
+<script type="module" src="./scripts/recipe-finder-script.js"></script>
 </body>
 </html>

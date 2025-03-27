@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .cart-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .cart-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            margin: 10px;
+            padding: 20px;
+        }
+        .cart-item img {
+            max-width: 200px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .cart-item h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .cart-item p {
+            color: #555;
+            font-size: 16px;
+        }
+        .cart-item .ingredients, .cart-item .instructions {
+            margin-top: 15px;
+        }
+        .cart-item .ingredients ul, .cart-item .instructions ul {
+            list-style: none;
+            padding: 0;
+        }
+        .cart-item .ingredients li, .cart-item .instructions li {
+            margin: 5px 0;
+        }
+        .cart-item .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2ecc71;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cart-container">
+    <div class="cart-item">
+        <div style="display: flex;">
+            <img src="https://cdn.dummyjson.com/recipe-images/1.webp" alt="Classic Margherita Pizza">
+            <div>
+                <h2>Classic Margherita Pizza</h2>
+                <p><strong>Rating:</strong> 4.6/5 (98 Reviews)</p>
+                <p><strong>Preparation Time:</strong> 20 minutes</p>
+                <p><strong>Cooking Time:</strong> 15 minutes</p>
+                <p><strong>Servings:</strong> 4</p>
+                <p><strong>Cuisine:</strong> Italian</p>
+                <p><strong>Difficulty:</strong> Easy</p>
+                <p><strong>Calories per serving:</strong> 300</p>
+
+                <div class="ingredients">
+                    <h3>Ingredients:</h3>
+                    <ul>
+                        <li>Pizza dough</li>
+                        <li>Tomato sauce</li>
+                        <li>Fresh mozzarella cheese</li>
+                        <li>Fresh basil leaves</li>
+                        <li>Olive oil</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul>
+                </div>
+
+                <div class="instructions">
+                    <h3>Instructions:</h3>
+                    <ul>
+                        <li>Preheat the oven to 475°F (245°C).</li>
+                        <li>Roll out the pizza dough and spread tomato sauce evenly.</li>
+                        <li>Top with slices of fresh mozzarella and fresh basil leaves.</li>
+                        <li>Drizzle with olive oil and season with salt and pepper.</li>
+                        <li>Bake in the preheated oven for 12-15 minutes or until the crust is golden brown.</li>
+                        <li>Slice and serve hot.</li>
+                    </ul>
+                </div>
+
+                <div class="price">
+                    $15.99
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
