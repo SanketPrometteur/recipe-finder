@@ -16,7 +16,6 @@ async function getRecipes() {
     if (recipesData) {
         displayFoodItems(recipesData);
 
-
         // searchButton.addEventListener('click', () => {
 
         //     searchInput = document.getElementById('search-input').value.toLowerCase();
@@ -53,7 +52,7 @@ function displayFoodItems(recipes) {
         // console.log(recipe.id);
 
         foodCard.innerHTML = `
-            <img src="${recipe.image || 'https://via.placeholder.com/300x200?text=No+Image'}" alt="${recipe.name}">
+            <img src="${recipe.image}" alt="${recipe.name}">
             <h3>${recipe.name}</h3>
             <p>${recipe.ingredients}</p>
             <button class="js-view-recipe-btn" onclick="viewRecipe(${recipe.id})">View Recipe</button>

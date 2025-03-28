@@ -86,18 +86,20 @@ header h1 {
     margin-bottom: 20px;
 }
 
-.food-card a {
+.food-card  {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #e7eae7;
+    color: rgb(11, 11, 11);
     text-decoration: none;
     border-radius: 5px;
     margin-bottom: 15px;
 }
 
-.food-card a:hover {
-    background-color: #45a049;
+.food-card:hover {
+    background-color: #8e958e;
+    color: #fffefe;
+    transform: scale(1.05);
 }
 
 /* Button styling for View Recipe */
@@ -109,7 +111,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    margin: 15px 10px;
     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
 }
 
