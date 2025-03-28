@@ -6,7 +6,7 @@ let searchInput ;
 
 // 
 // let filteredFood= [];
-let searchButton = document.getElementById('search-button');
+// let searchButton = document.getElementById('search-button');
 
 async function getRecipes() {
     recipesData = await loadRecipe();
@@ -17,23 +17,23 @@ async function getRecipes() {
         displayFoodItems(recipesData);
 
 
-        searchButton.addEventListener('click', () => {
+        // searchButton.addEventListener('click', () => {
 
-            searchInput = document.getElementById('search-input').value.toLowerCase();
+        //     searchInput = document.getElementById('search-input').value.toLowerCase();
 
-            searchByIngredients(searchInput);
+        //     searchByIngredients(searchInput);
 
-            // displayFoodItems(filteredFood);
+        //     // displayFoodItems(filteredFood);
 
-        });
+        // });
 
 
         // added on keyup event and pass the search input to the searchByIngredients() as a parameter
-        // document.getElementById('search-input').addEventListener('keyup',()=>{
-        //     searchInput= document.getElementById('search-input').value.toLowerCase();
-        //     searchByIngredients(searchInput);
+        document.getElementById('search-input').addEventListener('keyup',()=>{
+            searchInput= document.getElementById('search-input').value.toLowerCase();
+            searchByIngredients(searchInput);
 
-        // });
+        });
 
 
     } else {
