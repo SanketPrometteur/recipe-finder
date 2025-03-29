@@ -2,7 +2,7 @@ import { loadRecipe } from "./data/recipe-data.js";
 
 
 let recipesData;
-let searchInput ;
+let searchInput;
 
 // 
 // let filteredFood= [];
@@ -28,8 +28,8 @@ async function getRecipes() {
 
 
         // added on keyup event and pass the search input to the searchByIngredients() as a parameter
-        document.getElementById('search-input').addEventListener('keyup',()=>{
-            searchInput= document.getElementById('search-input').value.toLowerCase();
+        document.getElementById('search-input').addEventListener('keyup', () => {
+            searchInput = document.getElementById('search-input').value.toLowerCase();
             searchByIngredients(searchInput);
 
         });
@@ -66,24 +66,24 @@ function displayFoodItems(recipes) {
 
 
 
-function searchByIngredients(searchInput){
+function searchByIngredients(searchInput) {
     // console.log(searchInput);
 
-        let filteredFood =  recipesData.filter(recipe=>{
+    let filteredFood = recipesData.filter(recipe => {
 
         let recipeName = String(recipe.name);
         let recipeIngredients = String(recipe.ingredients);
 
         // console.log(recipeIngredients);
         // console.log(recipeName);
-        
+
         recipeName = recipeName.toLowerCase();
 
         recipeIngredients = recipeIngredients.toLowerCase();
 
         // console.log(recipeIngredients);
         // console.log(recipeName);
-        
+
         return recipeName.includes(searchInput) || recipeIngredients.includes(searchInput);
 
     });
@@ -91,14 +91,14 @@ function searchByIngredients(searchInput){
 }
 
 
-try{
-window.viewRecipe = function (recipeId) {
-    const selectedRecipe = recipesData.find(recipe => recipe.id === recipeId);
-    localStorage.setItem('selectedRecipe', JSON.stringify(selectedRecipe));
-    window.location.href = 'recipe-detail.html'; 
-};
+try {
+    window.viewRecipe = function (recipeId) {
+        const selectedRecipe = recipesData.find(recipe => recipe.id === recipeId);
+        localStorage.setItem('selectedRecipe', JSON.stringify(selectedRecipe));
+        window.location.href = 'recipe-detail.html';
+    };
 } catch (error) {
-console.error('Error fetching data:', error);
+    console.error('Error fetching data:', error);
 }
 
 getRecipes();
@@ -148,7 +148,7 @@ getRecipes();
 //     window.viewRecipe = function (recipeId) {
 //         const selectedRecipe = recipes.find(recipe => recipe.id === recipeId);
 //         localStorage.setItem('selectedRecipe', JSON.stringify(selectedRecipe));
-//         window.location.href = 'recipe-detail.html'; 
+//         window.location.href = 'recipe-detail.html';
 //     };
 // })
 // .catch(error => console.error('Error fetching data:', error));

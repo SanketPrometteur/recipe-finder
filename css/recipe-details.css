@@ -51,3 +51,33 @@ body {
     color: #2ecc71;
     margin-top: 20px;
 }
+
+/* Button Container Styling */
+button {
+    background-color: #3498db; /* Button background color */
+    border: none; /* Removes the default button border */
+    padding: 12px 20px; /* Padding inside the button */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Aligns the text inside the button */
+    display: inline-block; /* Ensures the button behaves like an inline element */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Link Styling inside Button */
+button a {
+    color: white; /* Text color */
+    text-decoration: none; /* Removes the underline from the link */
+}
+
+/* Hover effect for Button */
+button:hover {
+    background-color: #2980b9; /* Darker shade for hover effect */
+}
+
+/* Active effect for Button */
+button:active {
+    background-color: #1c6ca1; /* Even darker shade for active state */
+}

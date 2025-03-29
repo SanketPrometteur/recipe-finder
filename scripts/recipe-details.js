@@ -28,8 +28,8 @@
                  ${recipe.instructions.map(instruction => `<li>${instruction}</li>`).join('')}
              </ul>
          </div>
-
-        
+         <button><a href="../index.html">Go to Home Page</a></button>
+ 
      `;
  } else {
      // If no recipe is found, show a message
